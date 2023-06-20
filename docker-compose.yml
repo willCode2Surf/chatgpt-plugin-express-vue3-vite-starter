@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+  vue3viteexpressjsboilerplate:
+    image: vue3viteexpressjsboilerplate
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 6909:6909

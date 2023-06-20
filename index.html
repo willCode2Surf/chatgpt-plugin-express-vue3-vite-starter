@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vue3-vite-express-js-boilerplatee</title>
+  <style></style>
+</head>
+<style lang="scss">
+  :root {
+    --background-color: #0e0f16;
+    --text-primary: #050504;
+    --text-secondary: #9da9fa;
+    --device-bg-color: #0f2147;
+  }
+  body {
+    margin: 0px;
+  }
+  .content {
+    background-image: url("/assets/hatch.png");
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-position: center; /* Center the image */
+    background-repeat: repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: black;
+  }
+  .cool-title {
+    font-family: "Teko", sans-serif;
+    color: black;
+    font-size: 200px;
+    opacity: 1;
+    text-align: center;
+    margin-top: 10%;
+}
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+  .waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  -webkit-text-stroke: 3px black;
+}
+.waviy span {
+  font-family: "Teko", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+  </style>
+<body class="content">
+  <div id="app"></div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia|Poppins|Marhey|Inter|Teko:wght@300;500;600;700&display=swap"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/main.js"></script>
+  <script>
+  </script>
+</body>
+
+</html>
+
+
