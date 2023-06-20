@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "WEATHER Plugin (no auth)",
+  "name_for_model": "location",
+  "description_for_human": "Plugin for gathering current weather conditions and forecasts for a given location.",
+  "description_for_model": "Plugin for gathering current weather conditions and forecasts for a given location.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:6909/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "http://localhost:6909/logo.png",
+  "contact_email": "support@example.com",
+  "legal_info_url": "https://example.com/legal"
+}

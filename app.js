@@ -4,6 +4,7 @@ import routes from "./express-routes/index.js";
 import http from "http";
 import { ConfigurationData } from "./config/index.js";
 import { WebSocketServer } from "ws";
+import cors from "cors";
 
 const app = express();
 const wsServer = new WebSocketServer({
@@ -20,6 +21,7 @@ const main = async () => {
   });
 
   app.use(bodyParser.json());
+  app.use(cors());
   app.use(
     bodyParser.urlencoded({
       extended: true,
@@ -27,6 +29,17 @@ const main = async () => {
   );
   app.use("/", express.static("dist"));
   app.use("/routes", routes);
+
+  app.options("/*", function (req, res, next) {
+    res.header("X-Powered-By", "@WillCode2Surf");
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Content-Type, Authorization, Content-Length, X-Requested-With, openai-ephemeral-user-id, openai-conversation-id"
+    );
+    res.sendStatus(200);
+  });
 
   var server = http.createServer(app);
   server.listen(ConfigurationData.server.port);
@@ -37,7 +50,7 @@ const main = async () => {
   });
 
   console.info(`Server started on port ${ConfigurationData.server.port}`);
-  console.info(`http://127.0.0.1:${ConfigurationData.server.port}`);
+  console.info(`http://localhost:${ConfigurationData.server.port}`);
 };
 
 main().catch(console.error);

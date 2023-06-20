@@ -1,0 +1,78 @@
+openapi: 3.0.1
+info:
+  title: Weather ChatGPT Plugin
+  description: A plugin that allows the user to request current conditions and forecasts.
+  version: "v1"
+servers:
+  - url: http://localhost:6909
+paths:
+  /routes/weather:
+    post:
+      operationId: getWeather
+      summary: Get weather for a provided location
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/getWeatherRequest"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/getWeatherResponse"
+  /routes/forecast:
+    post:
+      operationId: getForecast
+      summary: Get forecast for a provided location
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/getForecastRequest"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/getForecastResponse"
+components:
+  schemas:
+    getWeatherRequest:
+      type: object
+      required:
+        - location
+      properties:
+        location:
+          type: string
+          description: The location to gather real time information for.
+          required: true
+    getForecastRequest:
+      type: object
+      required:
+        - location
+      properties:
+        location:
+          type: string
+          description: The location to gather forecast information for.
+          required: true
+    getWeatherResponse:
+      type: object
+      properties:
+        weather:
+          type: array
+          items:
+            type: string
+          description: The list of current weather statements.
+    getForecastResponse:
+      type: object
+      properties:
+        weather:
+          type: array
+          items:
+            type: string
+          description: The list of current forecast statements.

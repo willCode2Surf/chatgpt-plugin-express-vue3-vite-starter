@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "vue": "^3.3.4",
