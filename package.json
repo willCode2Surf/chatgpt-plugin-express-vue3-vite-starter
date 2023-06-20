@@ -1,6 +1,6 @@
 {
-  "name": "vue3-vite-express-js-boilerplate",
-  "description": "Dockerized Vue3 with Vite built using express and other various technologies for a quick boilerplate development stack",
+  "name": "chatgpt-plugin-express-vue3-vite-starter",
+  "description": "ChatGPT Plugin starter with Dockerized Vue3 with Vite built using express and other various technologies for a quick boilerplate development stack",
   "version": "1.0.0",
   "type": "module",
   "main": "app.js",
@@ -31,9 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willCode2Surf/vue3-vite-express-js-boilerplate.git"
+    "url": "git+https://github.com/willCode2Surf/chatgpt-plugin-express-vue3-vite-starter.git"
   },
   "keywords": [
+    "ChatGPT",
+    "ChatGPT Plugin",
+    "ChatGPT API",
     "docker",
     "vue",
     "vue3",
@@ -44,7 +47,7 @@
   "author": "@WillCode2Surf (dustin.w.brown@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/willCode2Surf/vue3-vite-express-js-boilerplate/issues"
+    "url": "https://github.com/willCode2Surf/chatgpt-plugin-express-vue3-vite-starter/issues"
   },
   "homepage": "https://github.com/willCode2Surf/vue3-vite-express-js-boilerplate#readme"
 }
