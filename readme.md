@@ -25,7 +25,7 @@ For this to work properly you will need the following:
 ### Clone the repo into your developemnt space
 
 ```
-git clone git@github.com:willCode2Surf/vue3-vite-express-js-boilerplate.git
+git clone git@github.com:willCode2Surf/chatgpt-plugin-express-vue3-vite-starter.git
 ```
 
 ### Open the project with VS Code/Terminal and install dependencies
