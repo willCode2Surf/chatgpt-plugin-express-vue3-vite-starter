@@ -79,6 +79,15 @@ When prompted for Plugin that you created plug in:
 http://localhost:6909
 ```
 
+### Ask ChatGPT about the weather!
+
+Now that you have the application running and plugged the endpoint above into the ChatGPT developer plugin spot you ask various questions:
+
+```
+Hey, how is the weather in Dallas?
+What is the weather in Orlando?
+```
+
 # Project Design
 
 This application is intended to be headless as an API. We are using the existing boilerplate to place needed OpenAPI files and ChatGPT manifest.
