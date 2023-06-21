@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "name_for_human": "WEATHER Plugin (no auth)",
+  "name_for_human": "WEATHER Plugin (no authorizations)",
   "name_for_model": "location",
   "description_for_human": "Plugin for gathering current weather conditions and forecasts for a given location.",
   "description_for_model": "Plugin for gathering current weather conditions and forecasts for a given location.",

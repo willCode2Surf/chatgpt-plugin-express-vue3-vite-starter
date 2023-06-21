@@ -1,6 +1,6 @@
 {
   "name": "chatgpt-plugin-express-vue3-vite-starter",
-  "description": "ChatGPT Plugin starter with Dockerized Vue3 with Vite built using express and other various technologies for a quick boilerplate development stack",
+  "description": "Weather ChatGPT Plugin starter with Dockerized Vue3 with Vite built using express and other various technologies for a quick boilerplate development stack",
   "version": "1.0.0",
   "type": "module",
   "main": "app.js",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "axios": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
@@ -50,5 +51,5 @@
   "bugs": {
     "url": "https://github.com/willCode2Surf/chatgpt-plugin-express-vue3-vite-starter/issues"
   },
-  "homepage": "https://github.com/willCode2Surf/vue3-vite-express-js-boilerplate#readme"
+  "homepage": "https://github.com/willCode2Surf/chatgpt-plugin-express-vue3-vite-starter#readme"
 }

@@ -30,17 +30,6 @@ const main = async () => {
   app.use("/", express.static("dist"));
   app.use("/routes", routes);
 
-  app.options("/*", function (req, res, next) {
-    res.header("X-Powered-By", "@WillCode2Surf");
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Content-Type, Authorization, Content-Length, X-Requested-With, openai-ephemeral-user-id, openai-conversation-id"
-    );
-    res.sendStatus(200);
-  });
-
   var server = http.createServer(app);
   server.listen(ConfigurationData.server.port);
   server.on("upgrade", (request, socket, head) => {
@@ -53,6 +42,7 @@ const main = async () => {
   console.info(`http://localhost:${ConfigurationData.server.port}`);
 };
 
+// entry
 main().catch(console.error);
 
 process.on("uncaughtException", function (err) {

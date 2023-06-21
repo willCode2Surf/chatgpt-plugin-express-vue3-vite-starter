@@ -45,11 +45,11 @@ components:
     getWeatherRequest:
       type: object
       required:
-        - location
+        - "location"
       properties:
         location:
           type: string
-          description: The location to gather real time information for.
+          description: The location's latitude and longitude to gather real time information for.
           required: true
     getForecastRequest:
       type: object
@@ -58,7 +58,7 @@ components:
       properties:
         location:
           type: string
-          description: The location to gather forecast information for.
+          description: The location's latitude and longitude to gather forecast information for.
           required: true
     getWeatherResponse:
       type: object

@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
   vue3viteexpressjsboilerplate:
-    image: vue3viteexpressjsboilerplate
+    image: chatgptweatherplugin:dev
     build:
       context: .
       dockerfile: ./Dockerfile
