@@ -14,14 +14,14 @@
 
 <script>
 import { ref } from "vue";
-import { useDeviceDetails } from "../composables/useStatusDetails";
+import { useStatusDetails } from "../composables/useStatusDetails";
 
 export default {
   name: "Welcome",
   components: {},
   setup() {
    
-    const { status } = useDeviceDetails();
+    const { status } = useStatusDetails();
     const now = ref(new Date(Date.now()));
     
     setInterval(() => {
